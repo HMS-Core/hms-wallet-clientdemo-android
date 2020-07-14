@@ -1,0 +1,925 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="3th_app_MainActivity" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0763b6a3-9778-4743-90b6-f0bcfc5566f1" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="hp_wallet_hmswalletkitdemo" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Constant.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/Constant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="76" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-manifest">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gradle-wrapper.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WalletPassCnActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/WalletPassCnActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="261" column="38" selection-start-line="261" selection-start-column="38" selection-end-line="261" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pageHomeActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/pageHomeActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values-en/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2052">
+              <caret line="108" column="51" selection-start-line="108" selection-start-column="51" selection-end-line="108" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2375">
+              <caret line="125" column="70" selection-start-line="125" selection-start-column="70" selection-end-line="125" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values-zh-rCN/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="48" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>urlList</find>
+      <find>addUrlList</find>
+      <find>textList</find>
+      <find>addTextList</find>
+      <find>balanceList</find>
+      <find>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&quot;</find>
+      <find>com.huawei.hms:wallet:4.0.2.301</find>
+      <find>http://developer.huawei.com/repo/</find>
+      <find>http://szg1.artifactory.inhuawei.com/artifactory/Product-HuaweiPay-release</find>
+      <find>addPassBtn</find>
+      <find>com.huawei.hms.wallet</find>
+      <find>onCreate</find>
+      <find>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</find>
+      <find>linkDevicePass</find>
+      <find>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</find>
+      <find>SAVE_TO_ANDROID</find>
+      <find>pageHomeActivity</find>
+      <find>canAddPassBtn</find>
+      <find>subName</find>
+      <find>DeviceId</find>
+      <find>3th App requirePassDeviceId enter</find>
+      <find>mWalletPassApi</find>
+      <find>onA</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/PassDataObjectActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/util/JweUtil.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/util/CommonUtil.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/util/TestUtil.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/CouponCardActivity.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/wallet_pass_cn.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/coupon_card_info.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/gift_card_info.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/pass_info.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/GiftCardActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/PassTestActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values-zh-rCN/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values-en/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/Constant.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/WalletPassCnActivity.java" />
+        <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hp_wallet_hmswalletkitdemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hp_wallet_hmswalletkitdemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hp_wallet_hmswalletkitdemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hp_wallet_hmswalletkitdemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hp_wallet_hmswalletkitdemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hp_wallet_hmswalletkitdemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hp_wallet_hmswalletkitdemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hp_wallet_hmswalletkitdemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hp_wallet_hmswalletkitdemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wallet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DEBUGGABLE_DEVICE" value="huawei-vog_al00-015XXV18CH001580" />
+    <property name="DEBUGGABLE_PROCESS" value="com.huawei.hms.wallet.apptest" />
+    <property name="DEBUGGER_ID" value="Auto" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="015XXV18CH001580" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-04-23T06:39:10.080Z" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHOW_ALL_PROCESSES" value="false" />
+    <property name="android.project.structure.last.selected" value="SDK Location" />
+    <property name="android.project.structure.proportion" value="0.15" />
+    <property name="android.sdk.path" value="D:/Android/Android_SDK" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\HiWallet\WalletKit SDK Demo\3.0\hp_wallet_hmswalletkitdemo\app\lib" />
+      <recent name="D:\HiWallet\WalletKit SDK Demo\3.0\hp_wallet_hmswalletkitdemo\app\src\main\assets" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method>
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="false" name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Android App.app" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0763b6a3-9778-4743-90b6-f0bcfc5566f1" name="Default Changelist" comment="" />
+      <created>1584968899183</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584968899183</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.203125" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.61160713" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19083156" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/WalletPassCnActivity.java</url>
+          <line>749</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/Android/.gradle/caches/transforms-1/files-1.1/wallet-4.0.2.301.aar/e576b9214ea65e3b5a68245b7c5ab66f/jars/classes.jar!/com/hw/passsdk/WalletPassApi.class</url>
+          <line>354</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="79" selection-start-line="5" selection-start-column="79" selection-end-line="5" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/WalletPassCnActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/PassTestActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2812">
+          <caret line="176" column="35" selection-start-line="176" selection-start-column="35" selection-end-line="176" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/pageHomeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-en/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2052">
+          <caret line="108" column="51" selection-start-line="108" selection-start-column="51" selection-end-line="108" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2375">
+          <caret line="125" column="70" selection-start-line="125" selection-start-column="70" selection-end-line="125" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-zh-rCN/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="48" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Android/.gradle/caches/transforms-1/files-1.1/wallet-4.0.2.301.aar/e576b9214ea65e3b5a68245b7c5ab66f/jars/classes.jar!/com/huawei/hms/wallet/pass/PassObject.class" />
+    <entry file="jar://D:/Android/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.5/c5b4c491aecb72e7c32a78da0b5c6b9cda8dee0f/gson-2.8.5-sources.jar!/com/google/gson/Gson.java" />
+    <entry file="jar://D:/Android/.gradle/caches/transforms-1/files-1.1/wallet-4.0.2.301.aar/e576b9214ea65e3b5a68245b7c5ab66f/jars/classes.jar!/com/huawei/hms/wallet/pass/FieldsObject.class" />
+    <entry file="jar://D:/Android/.gradle/caches/transforms-1/files-1.1/wallet-4.0.2.301.aar/e576b9214ea65e3b5a68245b7c5ab66f/jars/classes.jar!/com/huawei/hms/wallet/pass/AppendField.class" />
+    <entry file="jar://D:/Android/.gradle/caches/transforms-1/files-1.1/wallet-4.0.2.301.aar/e576b9214ea65e3b5a68245b7c5ab66f/jars/classes.jar!/com/huawei/hms/wallet/CreateWalletPassRequest.class" />
+    <entry file="file://$PROJECT_DIR$/app/app.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2400">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="819">
+          <caret line="34" column="104" selection-start-line="34" selection-start-column="104" selection-end-line="34" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Android/Android_SDK/sources/android-28/android/app/Activity.java" />
+    <entry file="jar://D:/Android/.gradle/caches/transforms-1/files-1.1/wallet-4.0.2.301.aar/e576b9214ea65e3b5a68245b7c5ab66f/jars/classes.jar!/com/huawei/hms/wallet/constant/WalletPassConstant.class" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/util/TestUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/util/RSA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-375">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/util/RandomUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/util/JweUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2000">
+          <caret line="53" column="85" selection-start-line="53" selection-start-column="85" selection-end-line="53" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/util/JweHeader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/util/HwHex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/util/EncodeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/util/CommonUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/util/CommCryptUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/util/BasisTimesUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/util/Base64Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/util/Base64Hw.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/util/AESUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/PassDataObjectActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="64" column="36" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1425">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1050">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/GiftCardActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="131" column="48" selection-start-line="131" selection-start-column="48" selection-end-line="131" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/CouponCardActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="61" column="38" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/PassTestActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2812">
+          <caret line="176" column="35" selection-start-line="176" selection-start-column="35" selection-end-line="176" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/pageHomeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-en/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2052">
+          <caret line="108" column="51" selection-start-line="108" selection-start-column="51" selection-end-line="108" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2375">
+          <caret line="125" column="70" selection-start-line="125" selection-start-column="70" selection-end-line="125" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-zh-rCN/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="48" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Android/.gradle/caches/transforms-1/files-1.1/wallet-4.0.2.301.aar/e576b9214ea65e3b5a68245b7c5ab66f/jars/classes.jar!/com/hw/passsdk/WalletPassApi.class" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/WalletPassCnActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="261" column="38" selection-start-line="261" selection-start-column="38" selection-end-line="261" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="76" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/huawei/hms/wallet/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

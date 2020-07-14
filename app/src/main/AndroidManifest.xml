@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.huawei.hms.wallet.apptest">
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- AppId is the value in the developer alliance app infomation -->
+        <meta-data
+            android:name="com.huawei.hms.client.appid"
+            android:value="******" />
+
+        <activity android:name="com.huawei.hms.wallet.pageHomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.huawei.hms.wallet.PassDataObjectActivity">
+        </activity>
+        <activity android:name="com.huawei.hms.wallet.GiftCardActivity">
+        </activity>
+        <activity android:name="com.huawei.hms.wallet.CouponCardActivity">
+        </activity>
+        <activity android:name="com.huawei.hms.wallet.PassTestActivity">
+        </activity>
+        <activity android:name="com.huawei.hms.wallet.WalletPassCnActivity">
+        </activity>
+        <activity android:name="com.huawei.hms.wallet.MainIndexActivity">
+        </activity>
+    </application>
+</manifest>
