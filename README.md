@@ -1,5 +1,4 @@
-# Wallet Kit Sample
-
+# HMS Walletkit Clientdemo
 
 ## Table of Contents
 
