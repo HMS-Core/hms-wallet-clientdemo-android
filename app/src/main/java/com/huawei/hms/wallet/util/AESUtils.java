@@ -16,8 +16,6 @@
 
 package com.huawei.hms.wallet.util;
 
-import com.huawei.agconnect.config.impl.Hex;
-
 import java.nio.charset.StandardCharsets;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
@@ -54,7 +52,7 @@ public class AESUtils {
             AlgorithmParameterSpec spec = new GCMParameterSpec(128, iv);
             cipher.init(1, secretKey, spec);
             byte[] fBytes = cipher.doFinal(plainByte);
-            return new String(Hex.encodeHexString(fBytes));
+            return new String(HwHex.encodeHexString(fBytes));
         } catch (Exception e) {
             System.out.println(e.getMessage());
             return null;

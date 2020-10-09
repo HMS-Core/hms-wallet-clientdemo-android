@@ -23,7 +23,7 @@ import android.view.View;
 
 import com.huawei.hms.wallet.apptest.R;
 
-public class pageHomeActivity extends Activity {
+public class PageHomeActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState)

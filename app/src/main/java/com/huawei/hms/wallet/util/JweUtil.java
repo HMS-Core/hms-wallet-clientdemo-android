@@ -19,7 +19,6 @@ package com.huawei.hms.wallet.util;
 import android.util.Base64;
 
 import com.alibaba.fastjson.JSONObject;
-import com.huawei.agconnect.config.impl.Hex;
 import com.huawei.hms.wallet.Constant;
 
 import java.io.ByteArrayOutputStream;
@@ -55,7 +54,7 @@ public class JweUtil {
 
         // The third part: JWE IV
         byte[] iv = AESUtils.getIvByte(12);
-        String ivHexStr = new String(Hex.encodeHexString(iv));
+        String ivHexStr = new String(HwHex.encodeHexString(iv));
         String ivEncode =  Base64.encodeToString(ivHexStr.getBytes(StandardCharsets.UTF_8), Base64.URL_SAFE|Base64.NO_WRAP);
 
         // The fourth part: JWE CipherText

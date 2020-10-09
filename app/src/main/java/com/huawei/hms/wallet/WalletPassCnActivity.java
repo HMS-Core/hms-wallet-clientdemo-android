@@ -108,6 +108,46 @@ public class WalletPassCnActivity extends Activity
     private Button deleteCardBtn;
 
     /**
+     * Start quering cards
+     */
+    private Button queryCardBtn;
+
+    /**
+     * Start quering swipe cards
+     */
+    private Button querySwipeCardBtn;
+
+    /**
+     * 认证注册请求
+     */
+    private Button requestRegisterBtn;
+
+    /**
+     * 认证注册确认
+     */
+    private Button confirmRegisterBtn;
+
+    /**
+     * 个人化请求
+     */
+    private Button requestPersonalizeBtn;
+
+    /**
+     * 个人化确认
+     */
+    private Button confirmPersonalizeBtn;
+
+    /**
+     * 请求交易
+     */
+    private Button requestTransactionBtn;
+
+    /**
+     * 确认交易
+     */
+    private Button confirmTransactionBtn;
+
+    /**
      * Show results
      */
     private TextView resultText;
@@ -171,6 +211,14 @@ public class WalletPassCnActivity extends Activity
         getPassDeviceIdBtn = (Button) findViewById(R.id.white_card_btn7);
         getPassStatusBtn = (Button) findViewById(R.id.white_card_btn8);
         deleteCardBtn = (Button) findViewById(R.id.white_card_btn9);
+        queryCardBtn = (Button) findViewById(R.id.white_card_btn10);
+        querySwipeCardBtn = (Button) findViewById(R.id.white_card_btn11);
+        requestRegisterBtn = (Button) findViewById(R.id.white_card_btn12);
+        confirmRegisterBtn = (Button) findViewById(R.id.white_card_btn13);
+        requestPersonalizeBtn = (Button) findViewById(R.id.white_card_btn14);
+        confirmPersonalizeBtn = (Button) findViewById(R.id.white_card_btn15);
+        requestTransactionBtn = (Button) findViewById(R.id.white_card_btn16);
+        confirmTransactionBtn = (Button) findViewById(R.id.white_card_btn17);
         addPassBtn.setEnabled(false);
 
         /**
@@ -326,6 +374,142 @@ public class WalletPassCnActivity extends Activity
             }
         });
 
+        /**
+     * Card writing method 7: query card
+     */
+        queryCardBtn.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                if (!isAddPassLoading)
+                {
+                    testQueryPass();
+                }
+            }
+        });
+
+        /**
+         * Card writing method 7: query card
+         */
+        querySwipeCardBtn.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                if (!isAddPassLoading)
+                {
+                    testQuerySwipeCardInfo();
+                }
+            }
+        });
+
+        /**
+         * Method of request regist to wallet
+         */
+        requestRegisterBtn.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                String registerRequestBody =
+                        "{\"requestBody\":{\"passTypeIdentifier\":\"\",\"serialNumber\":\"\"}}";
+                if (!isAddPassLoading)
+                {
+                    testrequestRegister(registerRequestBody);
+                }
+
+            }
+        });
+
+        /**
+         * Method of confirm regist to wallet
+         */
+        confirmRegisterBtn.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                String registerConfirmBody =
+                        "{\"requestBody\":{\"certificate\":{\"signature\":\"`\",\"publickKey\":\"\"},\"serialNumber\":\"\",\"passTypeIdentifier\":\"\"}}";
+
+                if (!isAddPassLoading)
+                {
+                    testconfirmRegister(registerConfirmBody);
+                }
+            }
+        });
+
+        /**
+         * Method of request personalize to wallet
+         */
+        requestPersonalizeBtn.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                String personalizeRequestBody =
+                        "{\"requestBody\":{\"passTypeIdentifier\":\"\",\"serialNumber\":\"\",\"token\":\"\"}}";
+
+                Log.i(TAG, "personalizeRequestBody:" + personalizeRequestBody);
+                if (!isAddPassLoading)
+                {
+                    testrequestPersonalize(personalizeRequestBody);
+                }
+            }
+        });
+
+        /**
+         * Method of confirm personalize to wallet
+         */
+        confirmPersonalizeBtn.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                String personalizeConfirmBody =
+                        "{\"confirmCode\":\"200\",\"requestBody\":{\"passTypeIdentifier\":\"\",\"serialNumber\":\"A\",\"encryptAppletPersonalizeFields\":\"\",\"encryptSessionKey\":\"\"},\"signature\":\"\"}";
+                if (!isAddPassLoading)
+                {
+                    testconfirmPersonalize(personalizeConfirmBody);
+                }
+            }
+        });
+
+        /**
+         * Method of request transaction to wallet
+         */
+        requestTransactionBtn.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                if (!isAddPassLoading)
+                {
+                    testrequestTransaction(
+                            "{\"requestBody\":{\"passTypeIdentifier\":\"\",\"serialNumber\":\"\"}}");
+                }
+            }
+        });
+
+        /**
+         * Method of confirm transaction to wallet
+         */
+        confirmTransactionBtn.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                if (!isAddPassLoading)
+                {
+                    String str1 =
+                            "{\"requestBody\":{\"passTypeIdentifier\":\"\",\"serialNumber\":\"\",\"transType\":\"car_key_hand_shake_1\",\"transContent\":\"\"}}";
+                    String str2 =
+                            "{\"requestBody\":{\"passTypeIdentifier\":\"\",\"serialNumber\":\"\",\"transType\":\"car_key_hand_shake_2\",\"transContent\":\"\"}}";
+                    testconfirmTransaction(str1);
+                }
+            }
+        });
     }
 
 
@@ -375,6 +559,100 @@ public class WalletPassCnActivity extends Activity
                         }
 
 
+                    }
+                });
+            }
+        }).start();
+    }
+
+    /**
+     * Test Query swipe Card info
+     */
+    private void testQuerySwipeCardInfo() {
+        resultText.setText("query swipe card info, please wait ...");
+        isAddPassLoading = true;
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                JSONObject jsonObject = new JSONObject();
+                JSONObject jsonObject2 = new JSONObject();
+                try {
+                    jsonObject.put("passTypeIdentifier", "hwpass.devicekey.samsonite");
+                    jsonObject.put("queryType", "SWIPE_LOG");
+                    jsonObject2.put("requestBody", jsonObject);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+                String requestBody = jsonObject2.toString();
+                Log.i(TAG, "3th App queryPass requestBody ==== " + requestBody);
+
+                final WalletPassApiResponse response = mWalletPassApi.queryPass(requestBody);
+                Log.i(TAG, "3th App queryPass");
+                runOnUiThread(new Runnable()
+                {
+
+                    @Override
+                    public void run() {
+                        if (response != null) {
+                            if ("0".equals(response.getReturnCode())){
+                                resultText.setText("Test query Card: Success");
+                            }
+                            else {
+                                resultText.setText("Test query Card: Failed\n returnCode = " + response.getReturnCode() + "\n returnRes = " + response.getReturnRes());
+                            }
+                        }
+                        else{
+                            resultText.setText("Test query Card: Failed\n response = null");
+                        }
+                        isAddPassLoading = false;
+                    }
+                });
+            }
+        }).start();
+    }
+
+    /**
+     * Test Query Card
+     */
+    private void testQueryPass()
+    {
+        resultText.setText("query card info, please wait ...");
+        isAddPassLoading = true;
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                JSONObject jsonObject = new JSONObject();
+                JSONObject jsonObject2 = new JSONObject();
+                try {
+                    jsonObject.put("passTypeIdentifier", "hwpass.devicekey.samsonite");
+                    jsonObject.put("queryType", "BIND_READER_ID");
+                    jsonObject2.put("requestBody", jsonObject);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+                String requestBody = jsonObject2.toString();
+                Log.i(TAG, "3th App queryPass requestBody ==== " + requestBody);
+
+                final WalletPassApiResponse response = mWalletPassApi.queryPass(requestBody);
+                Log.i(TAG, "3th App queryPass");
+                runOnUiThread(new Runnable() {
+
+                    @Override
+                    public void run() {
+                        if (response != null) {
+                            if ("0".equals(response.getReturnCode())) {
+                                resultText.setText("Test query Card: Success");
+                            }
+                            else {
+                                resultText.setText("Test query Card: Failed\n returnCode = " + response.getReturnCode() + "\n returnRes = " + response.getReturnRes());
+                            }
+                        }
+                        else {
+                            resultText.setText("Test query Card: Failed\n response = null");
+                        }
+                        isAddPassLoading = false;
                     }
                 });
             }
@@ -908,7 +1186,7 @@ public class WalletPassCnActivity extends Activity
                         {
                             if ("0".equals(response.getReturnCode()))
                             {
-                                resultText.setText("Get PassDeviceId: Yes" + response.getPassDeviceId());
+                                    resultText.setText("Get PassDeviceId: Yes" + response.getPassDeviceId());
                             }
                             else
                             {
@@ -979,6 +1257,267 @@ public class WalletPassCnActivity extends Activity
                     }
                 });
 
+
+            }
+        }).start();
+    }
+
+    private void testrequestRegister(final String registerRequestBody)
+    {
+        resultText.setText("正在认证注册请求，请稍后...");
+        isAddPassLoading = true;
+        requestRegisterBtn.setEnabled(false);
+
+        new Thread(new Runnable()
+        {
+            @Override
+            public void run()
+            {
+                final WalletPassApiResponse response = mWalletPassApi.requestRegister(registerRequestBody);
+                String json = response.getResponseStr();
+                Log.i(TAG, "3th App requestRegister: " + json);
+                runOnUiThread(new Runnable()
+                {
+
+                    @Override
+                    public void run()
+                    {
+                        if (response != null)
+                        {
+                            if ("0".equals(response.getReturnCode()))
+                            {
+                                resultText.setText("认证注册请求：成功");
+                            }
+                            else
+                            {
+                                resultText.setText("认证注册请求：失败\n returnCode = " + response.getReturnCode()
+                                        + "\n returnRes = " + response.getReturnRes());
+                            }
+                        }
+                        else
+                        {
+                            resultText.setText("认证注册请求：失败\n response = null");
+                        }
+                        isAddPassLoading = false;
+                        requestRegisterBtn.setEnabled(true);
+                    }
+                });
+
+            }
+        }).start();
+    }
+
+    private void testconfirmRegister(final String registerConfirmBody)
+    {
+        resultText.setText("正在认证注册确认，请稍后...");
+        isAddPassLoading = true;
+        confirmRegisterBtn.setEnabled(false);
+
+        new Thread(new Runnable()
+        {
+            @Override
+            public void run()
+            {
+                final WalletPassApiResponse response = mWalletPassApi.confirmRegister(registerConfirmBody);
+                Log.i(TAG, "3th App confirmRegister");
+                runOnUiThread(new Runnable()
+                {
+
+                    @Override
+                    public void run()
+                    {
+                        if (response != null)
+                        {
+                            if ("0".equals(response.getReturnCode()))
+                            {
+                                resultText.setText("认证注册确认：成功");
+                            }
+                            else
+                            {
+                                resultText.setText("认证注册确认：失败\n returnCode = " + response.getReturnCode()
+                                        + "\n returnRes = " + response.getReturnRes());
+                            }
+                        }
+                        else
+                        {
+                            resultText.setText("认证注册确认：失败\n response = null");
+                        }
+                        isAddPassLoading = false;
+                        confirmRegisterBtn.setEnabled(true);
+                    }
+                });
+
+            }
+        }).start();
+    }
+
+    private void testrequestPersonalize(final String personalizeRequestBody)
+    {
+        resultText.setText("正在个人化请求，请稍后...");
+        isAddPassLoading = true;
+        requestPersonalizeBtn.setEnabled(false);
+
+        new Thread(new Runnable()
+        {
+            @Override
+            public void run()
+            {
+                final WalletPassApiResponse response = mWalletPassApi.requestPersonalize(personalizeRequestBody);
+                Log.i(TAG, "3th App requestPersonalize: " + response.getResponseStr());
+                runOnUiThread(new Runnable()
+                {
+
+                    @Override
+                    public void run()
+                    {
+                        if (response != null)
+                        {
+                            if ("0".equals(response.getReturnCode()))
+                            {
+                                resultText.setText("个人化请求：成功");
+                            }
+                            else
+                            {
+                                resultText.setText("个人化请求：失败\n returnCode = " + response.getReturnCode()
+                                        + "\n returnRes = " + response.getReturnRes());
+                            }
+                        }
+                        else
+                        {
+                            resultText.setText("个人化请求：失败\n response = null");
+                        }
+                        isAddPassLoading = false;
+                        requestPersonalizeBtn.setEnabled(true);
+                    }
+                });
+
+            }
+        }).start();
+    }
+
+    private void testconfirmPersonalize(final String personalizeConfirmBody)
+    {
+        resultText.setText("正在个人化确认，请稍后...");
+        isAddPassLoading = true;
+        confirmPersonalizeBtn.setEnabled(false);
+        new Thread(new Runnable()
+        {
+            @Override
+            public void run()
+            {
+                final WalletPassApiResponse response = mWalletPassApi.confirmPersonalize(personalizeConfirmBody);
+                Log.i(TAG, "3th App confirmPersonalize: " + response.getReturnCode());
+                runOnUiThread(new Runnable()
+                {
+
+                    @Override
+                    public void run()
+                    {
+                        if (response != null)
+                        {
+                            if ("0".equals(response.getReturnCode()))
+                            {
+                                resultText.setText("个人化确认：成功");
+                            }
+                            else
+                            {
+                                resultText.setText("个人化确认：失败\n returnCode = " + response.getReturnCode()
+                                        + "\n returnRes = " + response.getReturnRes());
+                            }
+                        }
+                        else
+                        {
+                            resultText.setText("个人化确认：失败\n response = null");
+                        }
+                        isAddPassLoading = false;
+                        confirmPersonalizeBtn.setEnabled(true);
+                    }
+                });
+
+            }
+        }).start();
+    }
+
+    private void testrequestTransaction(final String requestTransBody)
+    {
+        resultText.setText("正在请求交易，请稍后...");
+        isAddPassLoading = true;
+        confirmPersonalizeBtn.setEnabled(false);
+        new Thread(new Runnable()
+        {
+            @Override
+            public void run()
+            {
+                final WalletPassApiResponse response = mWalletPassApi.requestTransaction(requestTransBody);
+                Log.i(TAG, "3th App requestTransaction: " + response.getReturnCode());
+                runOnUiThread(new Runnable()
+                {
+
+                    @Override
+                    public void run()
+                    {
+                        if (response != null)
+                        {
+                            if ("0".equals(response.getReturnCode()))
+                            {
+                                resultText.setText("请求交易：成功");
+                            }
+                            else
+                            {
+                                resultText.setText("请求交易：失败\n returnCode = " + response.getReturnCode()
+                                        + "\n returnRes = " + response.getReturnRes());
+                            }
+                        }
+                        else
+                        {
+                            resultText.setText("请求交易：失败\n response = null");
+                        }
+                        isAddPassLoading = false;
+                        confirmPersonalizeBtn.setEnabled(true);
+                    }
+                });
+
+            }
+        }).start();
+    }
+
+    private void testconfirmTransaction(final String str)
+    {
+        resultText.setText("正在申请握手，请稍后...");
+        isAddPassLoading = true;
+        new Thread(new Runnable()
+        {
+            @Override
+            public void run()
+            {
+                final WalletPassApiResponse response = mWalletPassApi.confirmTransaction(str);
+                Log.i(TAG, "3th App confirmTransaction: " + response.getResponseStr());
+                runOnUiThread(new Runnable()
+                {
+
+                    @Override
+                    public void run()
+                    {
+                        if (response != null)
+                        {
+                            if ("0".equals(response.getReturnCode()))
+                            {
+                                String res = response.getResponseStr();
+                                resultText.setText("测试握手：成功: " + res);
+                            }
+                            else
+                            {
+                                resultText.setText("测试握手：失败\n returnCode = " + response.getReturnCode()
+                                        + "\n returnRes = " + response.getReturnRes());
+                            }
+                        }
+                        else
+                        {
+                            resultText.setText("测试握手：失败\n response = null");
+                        }
+                        isAddPassLoading = false;
+                    }
+                });
 
             }
         }).start();

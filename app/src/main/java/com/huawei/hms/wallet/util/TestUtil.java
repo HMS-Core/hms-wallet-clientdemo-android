@@ -47,7 +47,7 @@ public class TestUtil
         String base64ZipData = null;
         try
         {
-            InputStream inputStream = mContext.getResources().getAssets().open("pass.zip");
+            InputStream inputStream = mContext.getResources().getAssets().open("common.hwpass");
             byte[] testData = InputStreamToByte(inputStream);
 
             base64ZipData = Base64Util.encode(testData);
