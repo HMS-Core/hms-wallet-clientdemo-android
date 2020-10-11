@@ -26,20 +26,19 @@ import com.huawei.hms.wallet.apptest.R;
 public class PageHomeActivity extends Activity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_page);
 
     }
 
     public void hwPassBtn1(View view) {
-        Intent intent = new Intent(this,WalletPassCnActivity.class);
+        Intent intent = new Intent(this, WalletPassCnActivity.class);
         startActivity(intent);
     }
 
     public void hwPassBtn2(View view) {
-        Intent intent = new Intent(this,MainIndexActivity.class);
+        Intent intent = new Intent(this, MainIndexActivity.class);
         startActivity(intent);
     }
 }

@@ -36,25 +36,19 @@ import javax.crypto.NoSuchPaddingException;
 
 import static android.util.Base64.NO_WRAP;
 
-
-public class TestUtil
-{
+public class TestUtil {
     /**
      * Create simulation data
      */
-    public static String createPassData(Context mContext)
-    {
+    public static String createPassData(Context mContext) {
         String base64ZipData = null;
-        try
-        {
+        try {
             InputStream inputStream = mContext.getResources().getAssets().open("common.hwpass");
             byte[] testData = InputStreamToByte(inputStream);
 
             base64ZipData = Base64Util.encode(testData);
 
-        }
-        catch (IOException e)
-        {
+        } catch (IOException e) {
             return null;
         }
 
@@ -66,12 +60,10 @@ public class TestUtil
      *
      * @return
      */
-    public static byte[] InputStreamToByte(InputStream is) throws IOException
-    {
+    public static byte[] InputStreamToByte(InputStream is) throws IOException {
         ByteArrayOutputStream bytestream = new ByteArrayOutputStream();
         int ch;
-        while ((ch = is.read()) != -1)
-        {
+        while ((ch = is.read()) != -1) {
             bytestream.write(ch);
         }
         byte imgdata[] = bytestream.toByteArray();
@@ -79,15 +71,12 @@ public class TestUtil
         return imgdata;
     }
 
-    public static String bytes2Hex(byte[] bts)
-    {
+    public static String bytes2Hex(byte[] bts) {
         StringBuffer des = new StringBuffer();
         String tmp = null;
-        for (int i = 0; i < bts.length; i++)
-        {
+        for (int i = 0; i < bts.length; i++) {
             tmp = (Integer.toHexString(bts[i] & 0xFF));
-            if (tmp.length() == 1)
-            {
+            if (tmp.length() == 1) {
                 des.append("0");
             }
             des.append(tmp);
@@ -95,12 +84,10 @@ public class TestUtil
         return des.toString();
     }
 
-    public static byte[] hexStringToByteArray(String s)
-    {
+    public static byte[] hexStringToByteArray(String s) {
         int len = s.length();
         byte[] data = new byte[len / 2];
-        for (int i = 0; i < len; i += 2)
-        {
+        for (int i = 0; i < len; i += 2) {
             data[i / 2] = (byte) ((Character.digit(s.charAt(i), 16) << 4) + Character.digit(s.charAt(i + 1), 16));
         }
         return data;
@@ -109,45 +96,31 @@ public class TestUtil
     /**
      * Public key encryption
      */
-    public static  String encryptByPublicKey(String data, String key)
-    {
+    public static String encryptByPublicKey(String data, String key) {
 
-        try
-        {
+        try {
             byte[] keyBytes = Base64.decode(key, NO_WRAP);
             X509EncodedKeySpec keySpec = new X509EncodedKeySpec(keyBytes);
             KeyFactory keyFactory = KeyFactory.getInstance("RSA");
             PublicKey pubKey = keyFactory.generatePublic(keySpec);
             Cipher cipher = Cipher.getInstance("RSA/ECB/NoPadding");
             cipher.init(Cipher.ENCRYPT_MODE, pubKey);
-            BigInteger da = new BigInteger(data , 16);
+            BigInteger da = new BigInteger(data, 16);
             byte[] mi = cipher.doFinal(da.toByteArray());
 
             return TestUtil.bytes2Hex(mi);
-        }
-        catch (NoSuchAlgorithmException e)
-        {
+        } catch (NoSuchAlgorithmException e) {
             System.out.println("No such encryption algorithm");
-        }
-        catch (NoSuchPaddingException e)
-        {
+        } catch (NoSuchPaddingException e) {
             e.printStackTrace();
             return null;
-        }
-        catch (InvalidKeyException e)
-        {
+        } catch (InvalidKeyException e) {
             System.out.println("Encryption public key is illegal, please check");
-        }
-        catch (IllegalBlockSizeException e)
-        {
+        } catch (IllegalBlockSizeException e) {
             System.out.println("Plain text length is illegal");
-        }
-        catch (BadPaddingException e)
-        {
+        } catch (BadPaddingException e) {
             System.out.println("Clear text data is corrupted");
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return null;
