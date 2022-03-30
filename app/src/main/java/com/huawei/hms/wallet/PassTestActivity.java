@@ -71,6 +71,7 @@ public class PassTestActivity extends FragmentActivity {
         String jweStr = getJweFromAppServer(passObject);
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse("hms://www.huawei.com/payapp/{" + jweStr + "}"));
+        intent.putExtra("link_kit_name", "walletkit");
         try {
             startActivityForResult(intent, SAVE_TO_ANDROID);
         } catch (ActivityNotFoundException e) {
@@ -95,7 +96,7 @@ public class PassTestActivity extends FragmentActivity {
         String instanceId = ii.getStringExtra("passId");
         issuerId = ii.getStringExtra("issuerId");
         Intent intent = new Intent(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse("https://lfwalletkittest.hwcloudtest.cn:18444/walletkit/consumer/pass/instance?issuerId=" + issuerId + "&instanceId=" + instanceId));
+        intent.setData(Uri.parse(getBrowserUrl(environment)+"/pass/instance?issuerId=" + issuerId + "&instanceId=" + instanceId));
         try {
             startActivity(intent);
         } catch (ActivityNotFoundException e) {
@@ -126,6 +127,7 @@ public class PassTestActivity extends FragmentActivity {
                             int errorCode =
                                     data.getIntExtra(
                                             WalletPassConstant.EXTRA_ERROR_CODE, -1);
+                            Log.i(TAG,"errorCode："+errorCode);
                             Toast.makeText(this, "fail, [" + errorCode + "]：" + analyzeErrorCode(errorCode), Toast.LENGTH_LONG).show();
                         } else {
                             Toast.makeText(this, "fail ：data is null ", Toast.LENGTH_LONG).show();

@@ -1,11 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 30
     defaultConfig {
         applicationId 'com.huawei.hms.wallet.apptest'
         minSdkVersion 19
-        targetSdkVersion 28
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0.0.311"
     }
@@ -29,7 +29,7 @@ android {
 dependencies {
     implementation fileTree(includes: ['*.jar','*.aar'], dir: 'lib')
     implementation 'com.android.support:appcompat-v7:28.0.0'
-    implementation 'com.huawei.hms:wallet:4.0.2.301'
+    implementation 'com.huawei.hms:wallet:4.0.4.301'
     implementation 'com.google.code.gson:gson:2.8.5'
     implementation 'com.huawei.hms:base:3.0.3.301'
 }

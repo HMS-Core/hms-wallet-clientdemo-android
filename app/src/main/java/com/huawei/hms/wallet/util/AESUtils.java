@@ -16,6 +16,9 @@
 
 package com.huawei.hms.wallet.util;
 
+import android.os.Build;
+import android.util.Log;
+
 import java.nio.charset.StandardCharsets;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
@@ -24,6 +27,7 @@ import java.security.spec.AlgorithmParameterSpec;
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.GCMParameterSpec;
+import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
 /**
@@ -49,7 +53,12 @@ public class AESUtils {
             byte[] plainByte = plainData.getBytes(StandardCharsets.UTF_8);
             SecretKey secretKey = new SecretKeySpec(secretKeyByte, "AES");
             Cipher cipher = Cipher.getInstance("AES/GCM/NoPadding");
-            AlgorithmParameterSpec spec = new GCMParameterSpec(128, iv);
+            AlgorithmParameterSpec spec;
+            if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
+                spec = new IvParameterSpec(iv, 0, iv.length);
+            } else {
+                spec = new GCMParameterSpec(128, iv);
+            }
             cipher.init(1, secretKey, spec);
             byte[] fBytes = cipher.doFinal(plainByte);
             return new String(HwHex.encodeHexString(fBytes));

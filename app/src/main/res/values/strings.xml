@@ -122,8 +122,8 @@
     <string name="giftScrollingTitle1">Rotation chart 1</string>
     <string name="giftScrollingTitle2">Rotation chart 2</string>
 
-    <string name="home_page_zh">Card coupon method to push card coupons to Huawei wallet app</string>
-    <string name="home_page_en">Push card to Huawei server through JWE</string>
+    <string name="home_page_zh">Obtaining vouchers in the app, fast app, or Huawei Pay CardStore mode</string>
+    <string name="home_page_en">Obtaining vouchers through web pages, SMS messages, emails, and apps</string>
 
     <string name="pass_cn_appid">Please enter an appid, such as "myappid"</string>
     <string name="pass_cn_passType">Please enter passType, such as "passType"</string>

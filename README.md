@@ -1,4 +1,6 @@
-# HMS Walletkit Sample
+# HMS Wallet Kit Sample
+
+English | [中文](README_ZH.md)
 
 ## Table of Contents
 
@@ -7,8 +9,8 @@
  * [Supported Environments](#supported-environments)
  * [Sample Code](#sample-code)
  * [License](#license)
- 
- 
+
+
 ## Introduction
 This sample code invokes HUAWEI Wallet Kit client APIs. It provides many sample methods for your reference or usage.
 

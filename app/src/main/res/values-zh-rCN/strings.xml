@@ -3,8 +3,8 @@
 
     <string name="app_name" priority="translator">"华为钱包"</string>
 
-    <string name="home_page_zh">"卡劵包方式向华为钱包应用推送卡劵"</string>
-    <string name="home_page_en">"JWE方式向华为服务器推送卡劵"</string>
+    <string name="home_page_zh">"App应用内、快应用、华为钱包CardStore方式领取卡劵"</string>
+    <string name="home_page_en">"网页、短信、Email、App应用内领取卡劵"</string>
     <string name="pass_cn_appid">"请输入appid，如“myappid”"</string>
     <string name="pass_cn_passType">"请输入passType，如“passType”"</string>
     <string name="pass_cn_canAddPass">"是否可以添加卡券"</string>

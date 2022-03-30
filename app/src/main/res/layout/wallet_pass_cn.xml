@@ -135,6 +135,60 @@
             android:gravity="center"
             android:text="@string/pass_cn_swipe"/>
 
+        <Button
+            android:id="@+id/white_card_btn12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="请求注册"/>
+
+        <Button
+            android:id="@+id/white_card_btn13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="确认注册"/>
+
+        <Button
+            android:id="@+id/white_card_btn14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="个人化请求"/>
+
+        <Button
+            android:id="@+id/white_card_btn15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="个人化确认"/>
+
+        <Button
+            android:id="@+id/white_card_btn16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="请求交易"/>
+
+        <Button
+            android:id="@+id/white_card_btn17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="确认交易"/>
+
         <TextView
             android:id="@+id/result"
             android:layout_width="wrap_content"
